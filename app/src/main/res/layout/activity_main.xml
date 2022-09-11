@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#02121E"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter text"
+        android:inputType="textPersonName"
+        android:textColorHint="#9E9E9E"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textColor="#B8B7B7"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_text"
+        app:layout_constraintStart_toStartOf="@+id/et_text"
+        app:layout_constraintTop_toBottomOf="@+id/et_text" />
+
+    <Button
+        android:id="@+id/btn_generate_toast"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="Generate Toast"
+        app:layout_constraintEnd_toEndOf="@+id/tv_text"
+        app:layout_constraintStart_toStartOf="@+id/tv_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_text" />
+
+    <Button
+        android:id="@+id/btn_generate_notification"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="Generate Notification"
+        app:layout_constraintEnd_toEndOf="@+id/btn_generate_toast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_generate_toast"
+        app:layout_constraintTop_toBottomOf="@+id/btn_generate_toast" />
+
+    <Button
+        android:id="@+id/btn_show_popup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="Generate modal Popup"
+        app:layout_constraintEnd_toEndOf="@+id/btn_generate_notification"
+        app:layout_constraintStart_toStartOf="@+id/btn_generate_notification"
+        app:layout_constraintTop_toBottomOf="@+id/btn_generate_notification" />
+
+    <Button
+        android:id="@+id/btn_change_text_of_textview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="Change text of tevtview"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show_popup"
+        app:layout_constraintStart_toStartOf="@+id/btn_show_popup"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_popup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
